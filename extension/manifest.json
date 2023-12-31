@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Apple Music to Discord",
+  "version": "1.0",
+
+  "description": "Connects Apple Music to discord",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://music.apple.com/*"],
+      "js": ["apple-music-discord.js"]
+    }
+  ],
+
+  "permissions": [
+    "*://localhost/*"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "apple-music-discord@hen6003.xyz"
+    }
+  }
+}
