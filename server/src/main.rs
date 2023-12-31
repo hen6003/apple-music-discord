@@ -37,7 +37,7 @@ fn main() {
         // Set the activity
         drpc.set_activity(|activity| {
             activity
-                .details(format!("Listening to: {}", status.title))
+                .details(format!("{}", status.title))
                 .state(format!("{} - {}", status.artist, status.album))
                 .assets(|assets| {
                     assets
